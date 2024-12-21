@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url("https://cdn.pixabay.com/photo/2024/11/13/08/47/city-9193823_640.jpg");
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main_heading {
+    margin-bottom: 3rem;
+    font-family :Verdana, Geneva, Tahoma, sans-serif;
+    color: #faf0ca;
+}
+
+.weather-container {
+    height: 50vh;
+    width: 40vh;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    border: 2px solid lightblue;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #fbf6ef;
+}
+
+.weather-container input {
+    height: 6rem;
+    width: 100%;
+    font-size: 1rem;
+    border: 2px solid gray;
+    border-radius: 0.4rem;
+    outline: none;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.weather-container button {
+    height: 5rem;;
+    width: 60%;
+    border: none;
+    font-size: 0.9rem;
+    border-radius: 5rem;
+    background-color: #457b9d;
+    color: #fefae0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.weather-container button:hover {
+    background-color: #0056b3;
+}
+
+.temperature {
+    height:25rem;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
