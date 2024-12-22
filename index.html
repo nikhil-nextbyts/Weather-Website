@@ -9,11 +9,15 @@
 <body>
     <h1 class="main_heading">Weather Checker</h1> 
     <div class="weather-container">
-        <p>Enter a City name to get the Current Weather</p>
+        <p class="pera">Enter a City name to get the Current Weather</p>
         <input type="text" id="city" placeholder="Enter city name">
         <button id="checkWeather">Check Weather</button>
         <div id="weatherDetails" class="temperature">
-            hello
+            <p>Temperature <span class="left">:</span><span class="out" id="tmp">--</span></p>
+            <p>Feels like <span class="left2">:</span><span class="out" id="feel">--</span></p>
+            <p>Wind Speed <span class="left3">:</span><span class="out" id="w_speed">--</span></p>
+            <p>Humidity <span class="left4">:</span><span class="out" id="hmd">--</span></p>
+            <p>Weather Condition :<span class="out" id="wdc">--</span></p>  
         </div>
     </div>
     <script src="weather.js"></script>

@@ -35,7 +35,7 @@ body {
     align-items: center;
 }
 
-.weather-container p {
+.weather-container .pera {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     color: #fbf6ef;
@@ -69,9 +69,37 @@ body {
 }
 
 .temperature {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     height:25rem;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-top: 1rem;
+    
+}
+
+p {
+    margin: 0.4rem 0 0.4rem 0;
+}
+
+.left {
+    margin-left: 2.9rem;
+}
+
+.left2 {
+    margin-left: 4.35rem;
+}
+
+.left3 {
+    margin-left: 3.15rem;
+}
+
+.left4 {
+    margin-left: 4.6rem;
+}
+
+.out {
+    margin-left: 2rem;
 }
