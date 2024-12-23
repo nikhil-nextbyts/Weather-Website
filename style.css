@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: url("https://cdn.pixabay.com/photo/2024/11/13/08/47/city-9193823_640.jpg");
+    background: url("https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-size: cover;
     color: #fff;
     display: flex;
@@ -19,49 +19,52 @@ body {
 .main_heading {
     margin-bottom: 3rem;
     font-family :Verdana, Geneva, Tahoma, sans-serif;
-    color: #faf0ca;
+    color: #02010a; 
+    
 }
 
 .weather-container {
-    height: 50vh;
+    height: 55vh;
     width: 40vh;
     text-align: center;
+    background-color: rgba(1, 7, 18, 0.3);
     backdrop-filter: blur(5px);
-    border: 2px solid lightblue;
-    padding: 2rem;
+    border: 2px solid #023047;
+    padding: 1rem;
     border-radius: 0.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+
 .weather-container .pera {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: #fbf6ef;
+    color: #023047;
+    font-weight: bold;
 }
 
 .weather-container input {
-    height: 6rem;
-    width: 100%;
+    width: 80%;
     font-size: 1rem;
     border: 2px solid gray;
     border-radius: 0.4rem;
     outline: none;
-    text-align: center;
+    padding: 0.5rem;
     margin-bottom: 1rem;
 }
 
 .weather-container button {
-    height: 5rem;;
     width: 60%;
     border: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     border-radius: 5rem;
-    background-color: #457b9d;
-    color: #fefae0;
+    background-color: lightblue;
+    color: #02010a;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    padding: 0.4rem;
 }
 
 .weather-container button:hover {
@@ -77,7 +80,7 @@ body {
     font-size: 1rem;
     font-weight: bold;
     margin-top: 1rem;
-    
+    color: #023047;
 }
 
 p {
@@ -102,4 +105,83 @@ p {
 
 .out {
     margin-left: 2rem;
+}
+
+.outD {    
+    margin-left: 10.5rem;
+    height: 50px;
+    width: 80px ;
+    position: relative;
+    bottom: 1.5rem;
+    padding: 0;
+}
+
+@media screen and (min-width: 500px) {
+    .weather-container {
+        width: 60%;
+    }
+    .weather-container input {
+        width: 90%;
+    }
+    .weather-container button {
+        width: 60%;
+    }
+    .temperature {
+        width: 100%;
+        position: relative;
+        left: 3rem;
+        top: 1rem;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .weather-container {
+        width: 60%;
+    }
+    .weather-container input {
+        width: 70%;
+    }
+    .weather-container button {
+        width: 30%;
+    }
+    .temperature {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .weather-container {
+        width: 50%;
+    }
+    .weather-container input {
+        width: 50%;
+    }
+    .weather-container button {
+        width: 30%;
+    }
+    .temperature {
+        width: 70%;
+        position: relative;
+        left: 4rem;
+        top: 1rem;
+    }
+    
+}
+
+@media screen and (min-width: 1300px) {
+    .weather-container {
+        width: 40%;
+    }
+    .weather-container input {
+        width: 60%;
+    }
+    .weather-container button {
+        width: 30%;
+    }
+    .temperature {
+        width: 50%;
+        position: relative;
+        left: 1rem;
+    }
+    
 }
